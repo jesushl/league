@@ -1,3 +1,4 @@
 ENV_CHALLENGE/
 ENV/
 .vscode/
+__pycache__/
