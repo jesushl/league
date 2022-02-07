@@ -1,21 +1,26 @@
-from msilib.schema import Error
 from numpy import genfromtxt, matrix, ndarray, array2string
-
+from pandas import DataFrame
 
 class MatrixOperators():
-    def __init__(self, csv_file):
+    
+    def __init__(self, csv_file=None):
+        """
+        Build this objects require a csv_file, but 
+        methods are independent of self file matrix created
+        """
         self.matrix = None 
         self.array=None
-        self.get_from_csv(input_file=csv_file)
+        if csv_file:
+            self.get_from_csv(input_file=csv_file)
 
-    def get_from_csv(self, input_file, separator=',', dtype=int)->matrix:
+    def get_from_csv(self, input_file, delimiter=',', dtype=int)->matrix:
         """
         Read CSV file and return a numpy matrix object 
         """
         try:
-            self.matrix = genfromtxt(input_file, separator=separator, dtype=dtype)
+            self.matrix = genfromtxt(input_file, delimiter=delimiter, dtype=dtype)
             return self.matrix
-        except Error as e:
+        except Exception as e:
             print(e)
             return e
     
@@ -23,7 +28,8 @@ class MatrixOperators():
         """
         This method returns a string from a matrix or vector
         """
-        return array2string(array)
+        df = DataFrame(array)
+        return df.to_html()
 
     def invert(self, matrix=None)->matrix:
         """
@@ -33,7 +39,7 @@ class MatrixOperators():
             matrix = self.matrix
         return matrix.transpose()
 
-    def fatten(self, matrix=None)->ndarray:
+    def flatten(self, matrix=None)->ndarray:
         """
         This method return an array from a matrix
         """
@@ -47,7 +53,7 @@ class MatrixOperators():
         """
         if not matrix:
             matrix  = self.matrix
-        return matrix.cumsum()[-1]
+        return int(matrix.cumsum()[-1])
         
 
     def multiply(self, matrix=None)->int:
@@ -56,5 +62,5 @@ class MatrixOperators():
         """
         if not matrix:
             matrix  = self.matrix
-        return matrix.cumprod()[-1]
+        return int(matrix.cumprod()[-1])
 
