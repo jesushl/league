@@ -1,5 +1,6 @@
 # League Backend Challenge
-### Python FastAPI
+### Python FastAPI :rocket:
+Jose de Jesus Herrera Ledon :v:
 
 ## Instructions
 
@@ -60,11 +61,11 @@ curl -F 'file=@/app/matrix.csv' "localhost:8080/echo"
 - [x] The code is easy to read
 - [x] The code is reasonably documented
 - [x] The code is tested
-- [x] The code is robust and handles invalid input and provides helpful error messages
+- [x] The code is robust and handles invalid input and provides helpful error messages :eyes:
 
 ## How to run it
 
-### Locally 
+### Locally  :arrow_forward:
     1- Create a virtual environment 
     2.- Activate your virtual environment
     3.-Install requirements as 
@@ -73,7 +74,7 @@ curl -F 'file=@/app/matrix.csv' "localhost:8080/echo"
     ```uvicorn app.main:app ```
     This application run at 127.0.0.1:8000/
 
-### Docker 
+### Docker  :arrow_forward:
 This project uses docker compose, if you have docker installed use 
 
 ```docker-compose -f docker_compose.yml build```
@@ -83,8 +84,13 @@ and
 ```docker-compose -f docker_compose.yml up``` 
 
 ### Documentation
-Once is runnig tou can look into 
+Once is runnig you can look into 
 
 local: 127.0.0.1:8000/docs 
 
 docker: 127.0.0.1:80/docs
+
+
+
+
+:libra:
