@@ -1,0 +1,20 @@
+* 160b2a4 - (hace 2 minutos) Adding some marks - jesushledon@gmail.com (HEAD -> main, origin/main, 002/readme)
+* 831dabb - (hace 25 minutos) Adding a better(not the best) error message - jesushledon@gmail.com (001/readme)
+* dc7898d - (hace 26 minutos) Adding a readme with run instructions - jesushledon@gmail.com
+* 4016335 - (hace 47 minutos) Moving files to make an easy deploy on docker - jesushledon@gmail.com (001/docker)
+* a6528f8 - (hace 76 minutos) Changing dev requirements to use request - jesushledon@gmail.com (master, 001/test)
+* 32e8a5f - (hace 89 minutos) removing debugin print - jesushledon@gmail.com
+* e9d526f - (hace 89 minutos) Some changes to emprove how matrix shows - jesushledon@gmail.com
+* da24935 - (hace 2 horas) Making an apropiate module - jesushledon@gmail.com
+* 2ecd357 - (hace 2 horas) first version of tests - jesushledon@gmail.com
+* 00e0f68 - (hace 2 horas) Adding a dev requirements to separate lintern and test tools from deploy tools - jesushledon@gmail.com
+* 290b38c - (hace 24 horas) Enpoints are functional - jesushledon@gmail.com (001/endpoints)
+* 69e07da - (hace 24 horas) ignoring cache - jesushledon@gmail.com
+* 3c239b8 - (hace 24 horas) installed uvicorn - jesushledon@gmail.com
+* e68f3c7 - (hace 25 horas) Adding endpoints before test - jesushledon@gmail.com
+* aafc6bf - (hace 25 horas) ignoring files from id - jesushledon@gmail.com
+* 853765a - (hace 25 horas) Actualizing git ignore, also a main in fast apy to read echo endpoint, the exaple related withj csv is included and readme. New module is created to handle matrix operations - jesushledon@gmail.com
+* fee1815 - (hace 25 horas) Changing from go to python-fast api aproach - jesushledon@gmail.com
+* 4f7abb2 - (hace 25 horas) requirements for python challenge - jesushledon@gmail.com
+* 73dcf82 - (hace 25 horas) Initial example, I will use fast api fopr this development - jesushledon@gmail.com
+* 46572d3 - (hace 25 horas) Adding a git ignore related with Virtual env - jesushledon@gmail.com
