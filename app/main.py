@@ -16,7 +16,7 @@ def echo(file: Optional[str]=default__matrix_csv):
         mx_op = MatrixOperators(file)
         return HTMLResponse(content=mx_op.print(mx_op.matrix), status_code=200)
     except Exception as e:
-        return e
+        return HTMLResponse(content=e, status_code=500)
 
 @app.get("/invert")
 def  invert(file: Optional[str]=default__matrix_csv):
@@ -25,7 +25,7 @@ def  invert(file: Optional[str]=default__matrix_csv):
         mx_op = MatrixOperators(file)
         return HTMLResponse(content=mx_op.print(mx_op.invert()), status_code=200)
     except Exception as e:
-        return e
+        return HTMLResponse(content=e, status_code=500)
 
 @app.get("/flatten")
 def  flatten(file: Optional[str]=default__matrix_csv):
@@ -34,7 +34,7 @@ def  flatten(file: Optional[str]=default__matrix_csv):
         mx_op = MatrixOperators(file)
         return mx_op.flatten().tolist()
     except Exception as e:
-        return e
+        return HTMLResponse(content=e, status_code=500)
 
 
 @app.get("/sum")
@@ -44,7 +44,7 @@ def  sum(file: Optional[str]=default__matrix_csv):
         mx_op = MatrixOperators(file)
         return mx_op.sum()
     except Exception as e:
-        return e
+        return HTMLResponse(content=e, status_code=500)
 
 
 @app.get("/multiply")
@@ -54,7 +54,7 @@ def  multiply(file: Optional[str]=default__matrix_csv):
         mx_op = MatrixOperators(file)
         return mx_op.multiply()
     except Exception as e:
-        return e
+        return HTMLResponse(content=e, status_code=500)
 
 
 @app.get("/")
