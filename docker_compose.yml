@@ -1,0 +1,15 @@
+
+version: '3'
+
+services:
+  api:
+    hostname: league_challenge
+    container_name: league_challenge
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    # Mount local code to container
+    volumes:
+      - .:/app
