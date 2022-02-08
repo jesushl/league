@@ -27,7 +27,6 @@ def  invert(file: Optional[str]='matrix.csv'):
 def  flatten(file: Optional[str]='matrix.csv'):
     try:
         mx_op = MatrixOperators(file)
-        print(mx_op.flatten().tolist())
         return mx_op.flatten().tolist()
     except Exception as e:
         return e
