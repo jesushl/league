@@ -29,7 +29,7 @@ class MatrixOperators():
         This method returns a string from a matrix or vector
         """
         df = DataFrame(array)
-        return df.to_html()
+        return df.to_html(header=False, index=False)
 
     def invert(self, matrix=None)->matrix:
         """
