@@ -90,6 +90,9 @@ and
 
 ```docker-compose -f docker_compose.yml up``` 
 
+Here the aplication is available at:
+127.0.0.1:80
+
 ### Documentation
 Once is runnig you can look into 
 
