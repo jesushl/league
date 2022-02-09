@@ -67,11 +67,17 @@ curl -F 'file=@/app/matrix.csv' "localhost:8080/echo"
 
 ### Locally  :arrow_forward:
     1- Create a virtual environment 
+
     2.- Activate your virtual environment
+
     3.-Install requirements as 
+
     ```pip install -r requirements_dev.txt```
+
     4.- Run the application 
+
     ```uvicorn app.main:app ```
+
     This application run at 127.0.0.1:8000/
 
 ### Docker  :arrow_forward:
