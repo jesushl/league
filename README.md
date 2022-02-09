@@ -73,11 +73,11 @@ curl -F 'file=@/app/matrix.csv' "localhost:8080/echo"
 
 3.-Install requirements as 
 
-    ```pip install -r requirements_dev.txt```
+```pip install -r requirements_dev.txt```
 
 4.- Run the application 
 
-    ```uvicorn app.main:app ```
+```uvicorn app.main:app ```
 
 This application run at 127.0.0.1:8000/
 
